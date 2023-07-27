@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+body {
+  color: #212121;
+}
+
+.wrapper {
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.box-1 {
+  background-color: purple;
+  width: 200px;
+  height: 200px;
+  animation: 3s 2.3s infinite forBox1;
+}
+
+.box-2 {
+  background-color: teal;
+  width: 200px;
+  height: 200px;
+  animation: 3s infinite forBox2;
+}
+
+@keyframes forBox1 {
+  0% {
+    transform: translate(0%);
+  }
+
+  25% {
+    transform: translate(0%, -100%);
+  }
+
+  50% {
+    transform: translate(100%, -100%);
+  }
+
+  75% {
+    transform: translate(100%);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
+}
+
+@keyframes forBox2 {
+  0% {
+    transform: translate(0%);
+  }
+
+  25% {
+    transform: translate(0%, -100%);
+  }
+
+  50% {
+    transform: translate(-100%, -100%);
+  }
+
+  75% {
+    transform: translate(-100%);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
+}
+
+/*# sourceMappingURL=index.34df27b5.css.map */
